@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello TemplateController!{% endblock %}
+
+{% block body %}
+{{include ('partials/_navbar.html.twig')}}
+
+<div class="example-wrapper">
+    <h1>Hello {{ controller_name }}! ✅</h1>
+
+
+    This friendly message is coming from:
+    <ul>
+        <li>Your controller at <code>C:/Users/hp-info/Downloads/eheio-ig5-master/eheio-ig5-master/src/Controller/TemplateController.php</code></li>
+        <li>Your template at <code>C:/Users/hp-info/Downloads/eheio-ig5-master/eheio-ig5-master/templates/template/index.html.twig</code></li>
+    </ul>
+</div>
+{% endblock %}
+
+{% block stylesheets %}
+         {{parent()}}
+         <style>
+         h1 {color:blue};
+         </style>
+        {% endblock %}
+
+ {% block javascripts %}
+         {# {{parent()}} #}
+        {% endblock %}
+
